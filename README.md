@@ -16,3 +16,7 @@ This will spin up the Kong gateway using the **http-log** plugin, along with a s
 
     curl -X 'GET' 'http://localhost:8000/headers' --http1.1 -H 'authorization: 111222333444555' -H 'apikey: 999888777'
 
+
+## See also
+- https://docs.konghq.com/hub/kong-inc/http-log/using-custom-fields/
+- https://github.com/tuannguyenssu/kong-examples
