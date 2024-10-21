@@ -82,7 +82,7 @@ upstreams:
 plugins:
 - name: http-log
   config:
-    http_endpoint: http://host.docker.internal:6000
+    http_endpoint: http://log-collector:6000
     method: POST
     custom_fields_by_lua: {"request.headers.apikey": "return (kong.request.get_header('apikey') and 'REDACTED' or nil)"}
     # timeout: 1000

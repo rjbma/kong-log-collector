@@ -7,6 +7,14 @@ networks:
 
 services:
 
+  log-collector:
+    container_name: log-collector
+    build: log-collector
+    networks:
+      - kong
+    ports:
+      - "6000:6000"
+
   #######################################
   # Kong: The API Gateway
   #######################################
